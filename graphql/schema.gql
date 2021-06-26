@@ -1,0 +1,94 @@
+type User {
+  username: String! @unique
+  name: String!
+  avatar: String
+  dob: Date!
+  location: String
+  created: Date!
+}
+
+input CreateUserInput {
+  username: String!
+  password: String!
+  name: String!
+  avatar: String
+  dob: Date!
+  location: String
+}
+
+input LoginUserInput {
+  username: String!
+  password: String!
+}
+
+type Follower {
+  follower: User!
+  following: User!
+}
+
+type Post {
+  author: User!
+  text: String!
+  comments: Int
+  likes: Int
+  shoutouts: Int
+  created: Date!
+}
+
+input PostInput {
+  text: String!
+}
+
+type Comment {
+  author: User
+  message: String!
+  post: Post
+  created: Date!
+}
+
+type PostInteractions {
+  user: User
+  post: Post
+  comment: Boolean
+  like: Boolean
+  shoutout: Boolean
+}
+
+input PostInteractionsInput {
+  post: ID!
+}
+
+type Like {
+  author: User
+  post: Post
+}
+
+type Shoutout {
+  author: User
+  post: Post
+}
+
+type Message {
+  author: User
+  dest: User
+  message: String!
+  readed: Boolean
+}
+
+type Query {
+  getUserByUsername(username: String!): User
+  getUsers: [User!]
+  getPosts: [Post!]
+  getPostInteractions(input: PostInteractionsInput): PostInteractions @resolver(name: "get_postinteractions")
+  getComments: [Comment!]
+  getLikes: [Like!]
+  getMessages: [Message!]
+  getShoutouts: [Shoutout!]
+  getFollowers: [Follower!]
+}
+
+type Mutation {
+  createUser(input: CreateUserInput): User! @resolver(name: "create_user")
+  loginUser(input: LoginUserInput): String! @resolver(name: "login_user")
+  createPost(input: PostInput): Post! @resolver(name: "create_post")
+}

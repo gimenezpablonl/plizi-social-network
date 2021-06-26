@@ -1,0 +1,54 @@
+{
+  "name": "plizi-social-network",
+  "version": "1.0.0",
+  "description": "Plizi Social Network",
+  "author": {
+    "name": "Pablo",
+    "email": "contact@gimenezpablo.nl",
+    "url": "https://gimenezpablo.nl"
+  },
+  "homepage": "https://plizi-social-network.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gimenezpablonl/plizi-social-network.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gimenezpablonl/plizi-social-network/issues"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "setup": "node ./scripts/setup.js"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.5",
+    "@chakra-ui/react": "^1.6.4",
+    "@chakra-ui/theme-tools": "1.1.7",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "cookie": "^0.4.1",
+    "faunadb": "^4.2.0",
+    "formik": "^2.2.6",
+    "framer-motion": "^4.1.17",
+    "graphql": "^15.5.1",
+    "graphql-request": "^3.4.0",
+    "js-cookie": "^2.2.1",
+    "next": "11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "swr": "^0.5.6"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.0",
+    "@types/js-cookie": "^2.2.6",
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@welldone-software/why-did-you-render": "^6.2.0",
+    "request": "^2.88.2",
+    "stream-to-promise": "^3.0.0",
+    "typescript": "4.3.4"
+  },
+  "license": "ISC"
+}
