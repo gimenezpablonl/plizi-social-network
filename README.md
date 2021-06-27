@@ -60,6 +60,8 @@
 <!-- ABOUT THE PROJECT -->
 <h2 id="about-the-project"> 🤔 About the Project </h2>
 
+![demo](readme/demo.png)
+
 Plizi is a social network made just to improve my development skills.
 
 <h3 id="built-with">🦾 Built With</h3>
@@ -151,7 +153,7 @@ Pablo Gimenez - [@gimenezpablonl](https://twitter.com/gimenezpablonl) - contact@
 <!-- CONTACT -->
 <h2 id="credits"> 🚀 Credits </h2>
 
-* [Plizi](https://github.com/Plizi-code/plizi) Main idea and graphic resources.
+* [Plizi-code](https://github.com/Plizi-code/plizi) Main idea and graphic resources.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -162,7 +164,7 @@ Pablo Gimenez - [@gimenezpablonl](https://twitter.com/gimenezpablonl) - contact@
 [forks-url]: https://github.com/gimenezpablonl/plizi-social-network/network/members
 [stars-shield]: https://img.shields.io/github/stars/gimenezpablonl/plizi-social-network.svg?style=for-the-badge
 [stars-url]: https://github.com/gimenezpablonl/plizi-social-network/stargazers
-[issues-shield]: https://img.shields.io/github/issues/gimenezpablonl/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/gimenezpablonl/plizi-social-network.svg?style=for-the-badge
 [issues-url]: https://github.com/gimenezpablonl/plizi-social-network/issues
 [license-shield]: https://img.shields.io/github/license/gimenezpablonl/plizi-social-network.svg?style=for-the-badge
 [license-url]: https://github.com/gimenezpablonl/plizi-social-network/blob/master/LICENSE
